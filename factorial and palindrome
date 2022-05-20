@@ -1,0 +1,23 @@
+
+def factorial(n):
+    if n < 0:
+        return 0
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        fact = 1
+        while(n > 1):
+            fact *= n
+            n -= 1
+        return fact
+
+
+a1 = int(input("enter the value for factorial"))
+print("Factorial of", a1, "is", factorial(a1))
+
+x1 = input("Enter a number to check its a palindrome")
+if x1 == x1[::-1]:
+    print("it is a palindrome")
+else:
+    print("not a palindrome")
+    
